@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { WhatsAppWidget } from './components/WhatsAppWidget';
@@ -22,7 +22,7 @@ export default function App() {
   const [selectedService, setSelectedService] = useState<ServiceItem | null>(null);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <div className="min-h-screen bg-[#faf7f2] text-[#1c1b18] font-sans-clean antialiased selection:bg-[#6b1d2f] selection:text-[#faf7f2] flex flex-col justify-between">
         {/* Navigation Header */}
@@ -86,7 +86,7 @@ export default function App() {
           onOpenConsultation={() => setIsConsultationOpen(true)}
         />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

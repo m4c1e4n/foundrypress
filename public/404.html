@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting... - Foundry Press</title>
+    <script>
+      // Single Page Apps for GitHub Pages
+      // Redirect to root with path in hash if direct URL accessed
+      (function() {
+        var path = window.location.pathname;
+        var search = window.location.search;
+        var hash = window.location.hash;
+        
+        // Remove trailing subpath to find base URL if needed, or redirect to root with hash
+        var repoName = path.split('/')[1] || '';
+        var redirectUrl = window.location.origin + '/' + (repoName ? repoName + '/' : '') + '#/' + path.split('/').slice(2).join('/') + search + hash;
+        
+        window.location.replace(redirectUrl);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to home page...</p>
+  </body>
+</html>
