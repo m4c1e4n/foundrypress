@@ -1,0 +1,8 @@
+{
+  "name": "Remix Foundry Press",
+  "description": "Every story deserves a book. From Voice to Volume - transforming ideas and spoken memories into professionally published books.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
