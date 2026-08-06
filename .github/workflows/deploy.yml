@@ -36,6 +36,15 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Verify build output
+        run: |
+          if [ ! -d dist ] || [ -z "$(ls -A dist 2>/dev/null)" ]; then
+            echo "ERROR: build output 'dist' is missing or empty. Aborting."
+            exit 1
+          fi
+          echo "Build output verified:"
+          ls -la dist
+
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
