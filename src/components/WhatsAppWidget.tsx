@@ -5,7 +5,7 @@ export const WhatsAppWidget: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [userMsg, setUserMsg] = useState('');
 
-  const phoneNumber = '233240000000'; // Ghana WhatsApp number
+  const phoneNumber = '233247109495'; // Ghana WhatsApp number
 
   const handleSendWhatsApp = (e?: React.FormEvent) => {
     if (e) e.preventDefault();

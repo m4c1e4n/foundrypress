@@ -39,7 +39,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
 
           {/* Quick Links */}
           <div className="md:col-span-3 space-y-3 text-xs">
-            <span className="uppercase tracking-[0.2em] text-[#7A0000] bg-white/90 px-2.5 py-1 rounded-sm font-bold block mb-3 w-fit">
+            <span className="uppercase tracking-[0.2em] text-white font-bold block mb-3">
               Navigation
             </span>
             <ul className="space-y-2 text-slate-200 font-medium">
@@ -57,13 +57,16 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
 
           {/* Contact & Legal */}
           <div className="md:col-span-4 space-y-4 text-xs">
-            <span className="uppercase tracking-[0.2em] text-[#7A0000] bg-white/90 px-2.5 py-1 rounded-sm font-bold block mb-3 w-fit">
+            <span className="uppercase tracking-[0.2em] text-white font-bold block mb-3">
               Publishing Imprint
             </span>
             <p className="text-slate-200 font-medium leading-relaxed">
               Ridge Tower, Independence Avenue<br />
               Accra, Ghana<br />
-              Direct: +233 30 200 0199
+              Direct: +233 24 710 9495<br />
+              <a href="mailto:foundrypressgh@gmail.com" className="hover:text-white underline">
+                foundrypressgh@gmail.com
+              </a>
             </p>
             <div className="pt-2">
               <button
@@ -79,8 +82,20 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-300">
-          <div>
-            © {new Date().getFullYear()} Foundry Press. All rights reserved. Accra, Ghana.
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-3 gap-y-1">
+            <span>© {new Date().getFullYear()} Foundry Press. All rights reserved. Accra, Ghana.</span>
+            <span className="hidden sm:inline text-slate-500">•</span>
+            <span>
+              created by{' '}
+              <a
+                href="https://m4c1e4n.github.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-100 hover:text-white underline font-medium transition-colors"
+              >
+                Maclean
+              </a>
+            </span>
           </div>
 
           <button
