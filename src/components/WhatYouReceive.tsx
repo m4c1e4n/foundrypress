@@ -9,12 +9,12 @@ export const WhatYouReceive: React.FC = () => {
         
         {/* Header */}
         <div className="max-w-3xl mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#16A34A]">
-            <span className="w-2 h-0.5 bg-[#16A34A]" />
+          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#7A0000]">
+            <span className="w-2 h-0.5 bg-[#7A0000]" />
             <span>What You Receive</span>
           </div>
 
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#0B1B3D] font-semibold leading-[1.12]">
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#003B46] font-semibold leading-[1.12]">
             Complete Publishing Deliverables
           </h2>
 
@@ -30,20 +30,20 @@ export const WhatYouReceive: React.FC = () => {
               key={item.id}
               className={`p-8 rounded-xl border transition-all ${
                 item.isHighlight
-                  ? 'bg-white border-[#0B1B3D] shadow-sm'
+                  ? 'bg-white border-[#003B46] shadow-sm'
                   : 'bg-white/80 border-slate-200'
               }`}
             >
               <div className="flex items-start gap-4 mb-4">
-                <div className="w-7 h-7 rounded-full bg-[#0B1B3D]/10 text-[#0B1B3D] flex items-center justify-center shrink-0 mt-0.5">
-                  <CheckCircle className="w-4 h-4 text-[#16A34A]" />
+                <div className="w-7 h-7 rounded-full bg-[#003B46]/10 text-[#003B46] flex items-center justify-center shrink-0 mt-0.5">
+                  <CheckCircle className="w-4 h-4 text-[#7A0000]" />
                 </div>
                 <div>
-                  <h3 className="font-serif text-2xl text-[#0B1B3D] font-semibold">
+                  <h3 className="font-serif text-2xl text-[#003B46] font-semibold">
                     {item.title}
                   </h3>
                   {item.isHighlight && (
-                    <span className="inline-block mt-1 text-[10px] uppercase tracking-[0.18em] font-semibold px-2 py-0.5 bg-[#16A34A]/10 text-[#16A34A] rounded-md">
+                    <span className="inline-block mt-1 text-[10px] uppercase tracking-[0.18em] font-semibold px-2 py-0.5 bg-[#7A0000]/10 text-[#7A0000] rounded-md">
                       Included Premium
                     </span>
                   )}
@@ -58,9 +58,9 @@ export const WhatYouReceive: React.FC = () => {
         </div>
 
         {/* Guarantee Banner */}
-        <div className="mt-16 bg-[#0B1B3D] text-white p-8 md:p-10 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-md border border-blue-900">
+        <div className="mt-16 bg-[#003B46] text-white p-8 md:p-10 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-md border border-[#003B46]/40">
           <div className="flex items-center gap-4">
-            <ShieldCheck className="w-10 h-10 text-[#16A34A] shrink-0" />
+            <ShieldCheck className="w-10 h-10 text-[#7A0000] shrink-0" />
             <div>
               <h4 className="font-serif text-2xl font-bold text-white">
                 100% Creative Rights & Copyright Ownership
@@ -72,7 +72,7 @@ export const WhatYouReceive: React.FC = () => {
           </div>
 
           <div className="text-right shrink-0">
-            <span className="text-xs uppercase tracking-[0.2em] text-[#16A34A] font-semibold block">
+            <span className="text-xs uppercase tracking-[0.2em] text-[#7A0000] font-semibold block">
               Foundry Guarantee
             </span>
           </div>

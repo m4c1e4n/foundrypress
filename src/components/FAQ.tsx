@@ -16,13 +16,13 @@ export const FAQ: React.FC = () => {
         
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#16A34A]">
-            <span className="w-2 h-0.5 bg-[#16A34A]" />
+          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#7A0000]">
+            <span className="w-2 h-0.5 bg-[#7A0000]" />
             <span>Frequently Asked Questions</span>
-            <span className="w-2 h-0.5 bg-[#16A34A]" />
+            <span className="w-2 h-0.5 bg-[#7A0000]" />
           </div>
 
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#0B1B3D] font-semibold">
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#003B46] font-semibold">
             Everything You Need To Know
           </h2>
 
@@ -45,12 +45,12 @@ export const FAQ: React.FC = () => {
                   className="w-full p-6 text-left flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors cursor-pointer"
                   aria-expanded={isOpen}
                 >
-                  <span className="font-serif text-xl md:text-2xl font-semibold text-[#0B1B3D]">
+                  <span className="font-serif text-xl md:text-2xl font-semibold text-[#003B46]">
                     {item.question}
                   </span>
                   <div
-                    className={`w-8 h-8 rounded-full bg-slate-100 text-[#0B1B3D] flex items-center justify-center shrink-0 transition-transform duration-200 ${
-                      isOpen ? 'rotate-180 bg-[#0B1B3D] text-white' : ''
+                    className={`w-8 h-8 rounded-full bg-slate-100 text-[#003B46] flex items-center justify-center shrink-0 transition-transform duration-200 ${
+                      isOpen ? 'rotate-180 bg-[#003B46] text-white' : ''
                     }`}
                   >
                     <ChevronDown className="w-4 h-4" />

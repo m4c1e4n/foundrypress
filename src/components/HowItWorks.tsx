@@ -18,18 +18,18 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenConsultation }) =>
         {/* Section Header matching exact image title */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
           <div>
-            <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#16A34A] mb-3">
-              <span className="w-2 h-0.5 bg-[#16A34A]" />
+            <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#7A0000] mb-3">
+              <span className="w-2 h-0.5 bg-[#7A0000]" />
               <span>Process Overview</span>
             </div>
-            <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#0B1B3D] font-semibold tracking-tight">
+            <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#003B46] font-semibold tracking-tight">
               The Journey to Publication
             </h2>
           </div>
 
           <button
             onClick={onOpenConsultation}
-            className="self-start md:self-auto px-6 py-3 bg-[#0B1B3D] hover:bg-[#16A34A] text-white text-xs uppercase tracking-[0.2em] font-bold rounded-full shadow-xs transition-colors flex items-center gap-2 cursor-pointer"
+            className="self-start md:self-auto px-6 py-3 bg-[#003B46] hover:bg-[#7A0000] text-white text-xs uppercase tracking-[0.2em] font-bold rounded-full shadow-xs transition-colors flex items-center gap-2 cursor-pointer"
           >
             <span>Start Your Journey</span>
             <ArrowRight className="w-3.5 h-3.5" />
@@ -57,7 +57,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenConsultation }) =>
                 >
                   {/* Center Diamond Node Marker */}
                   <div className="absolute left-6 md:left-1/2 top-2 -translate-x-1/2 z-20 flex items-center justify-center">
-                    <div className="w-4 h-4 bg-[#0B1B3D] rotate-45 transition-transform group-hover:scale-125 group-hover:bg-[#16A34A] shadow-xs" />
+                    <div className="w-4 h-4 bg-[#003B46] rotate-45 transition-transform group-hover:scale-125 group-hover:bg-[#7A0000] shadow-xs" />
                   </div>
 
                   {/* Content Box */}
@@ -69,11 +69,11 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenConsultation }) =>
                     }`}
                   >
                     <div className="space-y-1.5 transition-opacity duration-200">
-                      <span className="text-xs uppercase tracking-[0.18em] font-semibold text-[#16A34A] font-sans-clean block">
+                      <span className="text-xs uppercase tracking-[0.18em] font-semibold text-[#7A0000] font-sans-clean block">
                         Step 0{step.stepNumber}
                       </span>
 
-                      <h3 className="font-serif text-2xl md:text-3xl font-semibold text-[#0B1B3D] group-hover:text-[#16A34A] transition-colors">
+                      <h3 className="font-serif text-2xl md:text-3xl font-semibold text-[#003B46] group-hover:text-[#7A0000] transition-colors">
                         {step.title}
                       </h3>
 
@@ -97,16 +97,16 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenConsultation }) =>
         <div className="mt-24 bg-[#F8FAFC] border border-slate-200 p-8 md:p-12 rounded-2xl shadow-xs">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-4 border-r-0 md:border-r border-slate-200 pr-0 md:pr-8 space-y-2">
-              <span className="text-xs uppercase tracking-[0.2em] font-semibold text-[#16A34A]">
+              <span className="text-xs uppercase tracking-[0.2em] font-semibold text-[#7A0000]">
                 Active Phase Focus — Step 0{activeStepData.stepNumber}
               </span>
-              <h3 className="font-serif text-3xl md:text-4xl text-[#0B1B3D] font-semibold">
+              <h3 className="font-serif text-3xl md:text-4xl text-[#003B46] font-semibold">
                 {activeStepData.title}
               </h3>
             </div>
 
             <div className="md:col-span-8 space-y-4">
-              <p className="text-base md:text-lg text-[#0B1B3D] font-medium leading-relaxed">
+              <p className="text-base md:text-lg text-[#003B46] font-medium leading-relaxed">
                 {activeStepData.shortDescription}
               </p>
               <p className="text-sm md:text-base text-slate-600 font-sans-clean leading-relaxed font-normal">

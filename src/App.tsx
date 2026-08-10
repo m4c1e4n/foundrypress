@@ -24,7 +24,7 @@ export default function App() {
   return (
     <HashRouter>
       <ScrollToTop />
-      <div className="min-h-screen bg-[#faf7f2] text-[#1c1b18] font-sans-clean antialiased selection:bg-[#6b1d2f] selection:text-[#faf7f2] flex flex-col justify-between">
+      <div className="min-h-screen bg-[#faf7f2] text-[#1c1b18] font-sans-clean antialiased selection:bg-[#7A0000] selection:text-white flex flex-col justify-between">
         {/* Navigation Header */}
         <Header onOpenConsultation={() => setIsConsultationOpen(true)} />
 

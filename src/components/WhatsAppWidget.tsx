@@ -22,14 +22,14 @@ export const WhatsAppWidget: React.FC = () => {
       {isOpen && (
         <div className="mb-4 w-[calc(100vw-2rem)] max-w-sm sm:w-96 bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-200">
           {/* Header */}
-          <div className="bg-[#128C7E] text-white p-4 flex items-center justify-between">
+          <div className="bg-[#003B46] text-white p-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center font-bold text-lg">
                 F
               </div>
               <div>
                 <h4 className="font-semibold text-sm">Foundry Press Publishing</h4>
-                <p className="text-[11px] text-emerald-100 flex items-center gap-1">
+                <p className="text-[11px] text-emerald-300 flex items-center gap-1">
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                   Online • Usually replies in minutes
                 </p>
@@ -44,9 +44,9 @@ export const WhatsAppWidget: React.FC = () => {
           </div>
 
           {/* Chat Bubble Body */}
-          <div className="p-4 bg-[#E5DDD5] space-y-3 min-h-[140px] flex flex-col justify-end text-xs">
-            <div className="bg-white p-3 rounded-xl rounded-tl-none shadow-xs max-w-[88%] text-slate-800 space-y-1">
-              <span className="font-bold text-[#128C7E] text-[11px] block">Executive Desk</span>
+          <div className="p-4 bg-slate-100 space-y-3 min-h-[140px] flex flex-col justify-end text-xs">
+            <div className="bg-white p-3 rounded-xl rounded-tl-none shadow-xs max-w-[88%] text-slate-800 space-y-1 border border-slate-200">
+              <span className="font-bold text-[#7A0000] text-[11px] block">Executive Desk</span>
               <p className="text-slate-700 leading-relaxed">
                 Welcome to Foundry Press. Chat with us directly on WhatsApp to ask questions about manuscript reviews, pricing, or custom press runs.
               </p>
@@ -61,11 +61,11 @@ export const WhatsAppWidget: React.FC = () => {
               value={userMsg}
               onChange={(e) => setUserMsg(e.target.value)}
               placeholder="Type a message..."
-              className="flex-1 bg-white border border-slate-200 rounded-full px-4 py-2 text-base sm:text-xs text-slate-800 focus:outline-none focus:border-[#25D366] min-h-[40px]"
+              className="flex-1 bg-white border border-slate-200 rounded-full px-4 py-2 text-base sm:text-xs text-slate-800 focus:outline-none focus:border-[#003B46] min-h-[40px]"
             />
             <button
               type="submit"
-              className="w-10 h-10 rounded-full bg-[#25D366] hover:bg-[#128C7E] text-white flex items-center justify-center shrink-0 transition-colors shadow-xs cursor-pointer"
+              className="w-10 h-10 rounded-full bg-[#7A0000] hover:bg-[#5C0000] text-white flex items-center justify-center shrink-0 transition-colors shadow-xs cursor-pointer"
               title="Start WhatsApp Chat"
             >
               <Send className="w-4 h-4" />
@@ -77,7 +77,7 @@ export const WhatsAppWidget: React.FC = () => {
       {/* Floating Action Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="group flex items-center gap-2.5 bg-[#25D366] hover:bg-[#128C7E] text-white px-4 py-3.5 rounded-full shadow-xl transition-all hover:scale-105 cursor-pointer font-bold text-xs uppercase tracking-wider min-h-[44px]"
+        className="group flex items-center gap-2.5 bg-[#003B46] hover:bg-[#3F2710] text-white px-4 py-3.5 rounded-full shadow-xl transition-all hover:scale-105 cursor-pointer font-bold text-xs uppercase tracking-wider min-h-[44px] border border-white/20"
         aria-label="Chat on WhatsApp"
       >
         <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">

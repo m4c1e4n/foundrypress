@@ -66,20 +66,20 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
 
         {submitted ? (
           <div className="py-6 sm:py-8 text-center space-y-4 animate-in fade-in duration-300">
-            <div className="w-16 h-16 rounded-full bg-[#16A34A]/10 text-[#16A34A] flex items-center justify-center mx-auto">
-              <CheckCircle className="w-8 h-8 text-[#16A34A]" />
+            <div className="w-16 h-16 rounded-full bg-[#7A0000]/10 text-[#7A0000] flex items-center justify-center mx-auto">
+              <CheckCircle className="w-8 h-8 text-[#7A0000]" />
             </div>
             
-            <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-[#0B1B3D]">
+            <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-[#003B46]">
               Consultation Reserved
             </h3>
 
             <p className="text-sm text-slate-600 font-sans-clean leading-relaxed max-w-md mx-auto">
-              Thank you, <span className="font-semibold text-[#0B1B3D]">{formData.name}</span>. Your consultation booking details have been sent to WhatsApp.
+              Thank you, <span className="font-semibold text-[#003B46]">{formData.name}</span>. Your consultation booking details have been sent to WhatsApp.
             </p>
 
             <div className="bg-[#F8FAFC] border border-slate-200 p-4 rounded-xl text-xs text-slate-700 text-left space-y-2">
-              <div className="font-semibold uppercase tracking-[0.18em] text-[#0B1B3D]">Booking Summary:</div>
+              <div className="font-semibold uppercase tracking-[0.18em] text-[#003B46]">Booking Summary:</div>
               <p>• Date: <span className="font-semibold">{formData.preferredDate || 'Selected Date'}</span> at <span className="font-semibold">{formData.preferredTime}</span></p>
               <p>• Category: <span className="font-semibold">{formData.category}</span></p>
             </div>
@@ -104,11 +104,11 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
         ) : (
           <div>
             <div className="mb-6 pr-8">
-              <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#16A34A] mb-1">
+              <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#7A0000] mb-1">
                 <BookOpen className="w-3.5 h-3.5" />
                 <span>Foundry Executive Consultation</span>
               </div>
-              <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-[#0B1B3D]">
+              <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-[#003B46]">
                 Schedule Your Complimentary Session
               </h3>
               <p className="text-xs text-slate-500 font-sans-clean mt-1 font-normal">
@@ -120,7 +120,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
               {step === 1 ? (
                 <div className="space-y-4 animate-in fade-in duration-200">
                   <div>
-                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#0B1B3D] mb-1.5">
+                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#003B46] mb-1.5">
                       Your Full Name *
                     </label>
                     <input
@@ -129,12 +129,12 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
                       placeholder="e.g. Thomas Sterling"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#0B1B3D] min-h-[44px]"
+                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#003B46] min-h-[44px]"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#0B1B3D] mb-1.5">
+                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#003B46] mb-1.5">
                       Email Address *
                     </label>
                     <input
@@ -143,12 +143,12 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
                       placeholder="thomas@example.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#0B1B3D] min-h-[44px]"
+                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#003B46] min-h-[44px]"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#0B1B3D] mb-1.5">
+                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#003B46] mb-1.5">
                       Phone Number
                     </label>
                     <input
@@ -156,18 +156,18 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
                       placeholder="+1 (555) 000-0000"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#0B1B3D] min-h-[44px]"
+                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#003B46] min-h-[44px]"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#0B1B3D] mb-1.5">
+                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#003B46] mb-1.5">
                       Book Category
                     </label>
                     <select
                       value={formData.category}
                       onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#0B1B3D] min-h-[44px]"
+                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#003B46] min-h-[44px]"
                     >
                       {BOOK_CATEGORIES.map((cat) => (
                         <option key={cat.id} value={cat.name}>
@@ -182,7 +182,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
                     onClick={() => {
                       if (formData.name && formData.email) setStep(2);
                     }}
-                    className="w-full mt-4 py-3.5 bg-[#0B1B3D] hover:bg-[#16A34A] text-white text-xs uppercase tracking-[0.2em] font-bold rounded-full transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-xs min-h-[44px]"
+                    className="w-full mt-4 py-3.5 bg-[#003B46] hover:bg-[#7A0000] text-white text-xs uppercase tracking-[0.2em] font-bold rounded-full transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-xs min-h-[44px]"
                   >
                     <span>Continue To Date & Time</span>
                     <ArrowRight className="w-4 h-4" />
@@ -191,7 +191,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
               ) : (
                 <div className="space-y-4 animate-in fade-in duration-200">
                   <div>
-                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#0B1B3D] mb-1.5">
+                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#003B46] mb-1.5">
                       Preferred Date *
                     </label>
                     <input
@@ -199,18 +199,18 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
                       required
                       value={formData.preferredDate}
                       onChange={(e) => setFormData({ ...formData, preferredDate: e.target.value })}
-                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#0B1B3D] min-h-[44px]"
+                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#003B46] min-h-[44px]"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#0B1B3D] mb-1.5">
+                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#003B46] mb-1.5">
                       Preferred Time Slot
                     </label>
                     <select
                       value={formData.preferredTime}
                       onChange={(e) => setFormData({ ...formData, preferredTime: e.target.value })}
-                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#0B1B3D] min-h-[44px]"
+                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#003B46] min-h-[44px]"
                     >
                       <option value="09:00 AM EST">09:00 AM EST</option>
                       <option value="11:00 AM EST">11:00 AM EST</option>
@@ -220,7 +220,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
                   </div>
 
                   <div>
-                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#0B1B3D] mb-1.5">
+                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#003B46] mb-1.5">
                       Brief Notes / Vision for your book
                     </label>
                     <textarea
@@ -228,7 +228,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
                       placeholder="Any specific stories, goals, or deadlines you'd like us to know beforehand..."
                       value={formData.notes}
                       onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#0B1B3D] resize-none"
+                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#003B46] resize-none"
                     />
                   </div>
 
@@ -242,7 +242,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
                     </button>
                     <button
                       type="submit"
-                      className="w-2/3 py-3 bg-[#16A34A] hover:bg-[#15803D] text-white text-xs uppercase tracking-[0.2em] font-bold rounded-full shadow-xs transition-colors cursor-pointer min-h-[44px]"
+                      className="w-2/3 py-3 bg-[#7A0000] hover:bg-[#5C0000] text-white text-xs uppercase tracking-[0.2em] font-bold rounded-full shadow-xs transition-colors cursor-pointer min-h-[44px]"
                     >
                       Confirm Booking
                     </button>

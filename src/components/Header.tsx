@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { Menu, X, BookOpen, ArrowRight } from 'lucide-react';
+import { Menu, X, ArrowRight } from 'lucide-react';
+import { FoundryLogo } from './FoundryLogo';
 
 interface HeaderProps {
   onOpenConsultation?: () => void;
@@ -37,37 +38,32 @@ export const Header: React.FC<HeaderProps> = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white border-b border-slate-200 ${
-        isScrolled ? 'shadow-sm py-2.5 sm:py-3' : 'py-3.5 sm:py-4'
+        isScrolled ? 'shadow-sm py-2 sm:py-2.5' : 'py-3 sm:py-3.5'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-3">
-        {/* Brand Logo */}
-        <Link to="/" className="flex items-center gap-2.5 shrink-0 group py-1">
-          <div className="w-9 h-9 rounded-md bg-[#0B1B3D] text-white flex items-center justify-center font-serif font-bold text-xl shadow-xs group-hover:bg-[#16A34A] transition-colors shrink-0">
-            <BookOpen className="w-5 h-5 text-white" />
-          </div>
-          <div className="flex flex-col">
-            <span className="font-serif text-xl sm:text-2xl font-bold tracking-wider text-[#0B1B3D] group-hover:text-[#16A34A] transition-colors leading-tight uppercase">
-              FOUNDRY PRESS
-            </span>
-            <span className="text-[10px] tracking-wider text-slate-500 font-medium -mt-0.5 hidden xs:inline-block sm:block">
-              Every story deserves a book
-            </span>
-          </div>
+      <div className="w-full max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 flex items-center justify-between gap-4">
+        {/* Brand Logo - Aligned Left */}
+        <Link
+          to="/"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="flex items-center shrink-0 group py-0.5 -ml-1 sm:-ml-2 cursor-pointer"
+          aria-label="Foundry Press Home"
+        >
+          <FoundryLogo textColor="dark" showSubtitle={true} />
         </Link>
 
-        {/* Center Desktop Navigation Links */}
-        <nav className="hidden lg:flex items-center gap-3 xl:gap-5">
+        {/* Center/Right Desktop Navigation Links */}
+        <nav className="hidden lg:flex items-center gap-1.5 xl:gap-3 2xl:gap-4">
           {navLinks.map((link) => (
             <NavLink
               key={link.name}
               to={link.path}
               end={link.path === '/'}
               className={({ isActive }) =>
-                `text-xs xl:text-sm py-1.5 transition-all ${
+                `text-xs xl:text-sm font-semibold px-2.5 py-1.5 rounded-md transition-colors whitespace-nowrap ${
                   isActive
-                    ? 'text-[#16A34A] font-bold border-b-2 border-[#16A34A]'
-                    : 'text-slate-700 font-semibold hover:text-[#0B1B3D]'
+                    ? 'text-[#7A0000] font-bold bg-[#7A0000]/10 border-b-2 border-[#7A0000]'
+                    : 'text-slate-700 hover:text-[#003B46] hover:bg-slate-100/80'
                 }`
               }
             >
@@ -76,7 +72,7 @@ export const Header: React.FC<HeaderProps> = () => {
           ))}
         </nav>
 
-        {/* Mobile Action & Menu Button */}
+        {/* Mobile Menu Button */}
         <div className="flex lg:hidden items-center gap-2">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -100,7 +96,7 @@ export const Header: React.FC<HeaderProps> = () => {
                 onClick={() => setMobileMenuOpen(false)}
                 className={({ isActive }) =>
                   `text-sm font-semibold py-3 border-b border-slate-100 flex items-center justify-between min-h-[44px] px-2 rounded-lg ${
-                    isActive ? 'text-[#16A34A] font-bold bg-emerald-50/50' : 'text-slate-800 hover:text-[#16A34A] hover:bg-slate-50'
+                    isActive ? 'text-[#7A0000] font-bold bg-[#7A0000]/10' : 'text-slate-800 hover:text-[#003B46] hover:bg-slate-50'
                   }`
                 }
               >

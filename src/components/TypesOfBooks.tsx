@@ -12,12 +12,12 @@ export const TypesOfBooks: React.FC = () => {
         
         {/* Header */}
         <div className="max-w-3xl mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#16A34A]">
-            <span className="w-2 h-0.5 bg-[#16A34A]" />
+          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#7A0000]">
+            <span className="w-2 h-0.5 bg-[#7A0000]" />
             <span>Types of Books</span>
           </div>
 
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#0B1B3D] font-semibold leading-[1.12]">
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#003B46] font-semibold leading-[1.12]">
             What Story Will You Publish?
           </h2>
 
@@ -36,8 +36,8 @@ export const TypesOfBooks: React.FC = () => {
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-5 py-2.5 rounded-full text-xs md:text-sm font-semibold tracking-wide transition-all duration-200 cursor-pointer border ${
                   isSelected
-                    ? 'bg-[#0B1B3D] text-white border-[#0B1B3D] shadow-sm'
-                    : 'bg-[#F8FAFC] text-slate-700 border-slate-200 hover:border-[#0B1B3D] hover:bg-white'
+                    ? 'bg-[#003B46] text-white border-[#003B46] shadow-sm'
+                    : 'bg-[#F8FAFC] text-slate-700 border-slate-200 hover:border-[#003B46] hover:bg-white'
                 }`}
               >
                 {cat.name}
@@ -52,8 +52,8 @@ export const TypesOfBooks: React.FC = () => {
             
             <div className="lg:col-span-7 space-y-6">
               <div className="flex items-center gap-3">
-                <BookMarked className="w-6 h-6 text-[#16A34A]" />
-                <h3 className="font-serif text-3xl md:text-4xl text-[#0B1B3D] font-semibold">
+                <BookMarked className="w-6 h-6 text-[#7A0000]" />
+                <h3 className="font-serif text-3xl md:text-4xl text-[#003B46] font-semibold">
                   {selectedCategory.name}
                 </h3>
               </div>
@@ -65,26 +65,26 @@ export const TypesOfBooks: React.FC = () => {
               <div className="pt-4 border-t border-slate-200 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
                 <div>
                   <span className="text-slate-500 uppercase tracking-[0.18em] font-semibold block mb-1">Typical Length</span>
-                  <span className="font-serif text-lg font-bold text-[#0B1B3D]">{selectedCategory.typicalLength}</span>
+                  <span className="font-serif text-lg font-bold text-[#003B46]">{selectedCategory.typicalLength}</span>
                 </div>
                 <div>
                   <span className="text-slate-500 uppercase tracking-[0.18em] font-semibold block mb-1">Target Audience</span>
-                  <span className="text-sm font-semibold text-[#0B1B3D]">{selectedCategory.targetAudience}</span>
+                  <span className="text-sm font-semibold text-[#003B46]">{selectedCategory.targetAudience}</span>
                 </div>
               </div>
             </div>
 
             {/* Example Topics */}
             <div className="lg:col-span-5 bg-white border border-slate-200 p-6 rounded-xl space-y-4 shadow-xs">
-              <div className="text-xs uppercase tracking-[0.2em] font-semibold text-[#16A34A] flex items-center gap-2">
-                <Sparkles className="w-3.5 h-3.5 text-[#16A34A]" />
+              <div className="text-xs uppercase tracking-[0.2em] font-semibold text-[#7A0000] flex items-center gap-2">
+                <Sparkles className="w-3.5 h-3.5 text-[#7A0000]" />
                 <span>Example Chapter Focuses</span>
               </div>
 
               <ul className="space-y-2.5">
                 {selectedCategory.exampleTopics.map((topic, i) => (
                   <li key={i} className="flex items-start gap-2.5 text-xs md:text-sm text-slate-800 font-sans-clean font-normal">
-                    <Check className="w-4 h-4 text-[#16A34A] shrink-0 mt-0.5" />
+                    <Check className="w-4 h-4 text-[#7A0000] shrink-0 mt-0.5" />
                     <span>{topic}</span>
                   </li>
                 ))}

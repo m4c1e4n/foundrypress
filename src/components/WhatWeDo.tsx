@@ -13,12 +13,12 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({ onSelectService }) => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Header */}
         <div className="max-w-3xl mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#16A34A]">
-            <span className="w-2 h-0.5 bg-[#16A34A]" />
+          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#7A0000]">
+            <span className="w-2 h-0.5 bg-[#7A0000]" />
             <span>What We Do</span>
           </div>
           
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#0B1B3D] font-semibold leading-[1.12]">
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#003B46] font-semibold leading-[1.12]">
             End-to-End Literary Services
           </h2>
 
@@ -33,19 +33,19 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({ onSelectService }) => {
             <div
               key={service.id}
               onClick={() => onSelectService(service)}
-              className="group bg-[#F8FAFC] hover:bg-white border border-slate-200 hover:border-[#0B1B3D] p-8 rounded-xl transition-all duration-300 shadow-xs hover:shadow-md cursor-pointer flex flex-col justify-between relative overflow-hidden"
+              className="group bg-[#F8FAFC] hover:bg-white border border-slate-200 hover:border-[#003B46] p-8 rounded-xl transition-all duration-300 shadow-xs hover:shadow-md cursor-pointer flex flex-col justify-between relative overflow-hidden"
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="font-serif text-sm font-bold text-[#16A34A] tracking-widest">
+                  <span className="font-serif text-sm font-bold text-[#7A0000] tracking-widest">
                     0{index + 1}
                   </span>
-                  <div className="w-8 h-8 rounded-full bg-slate-200 group-hover:bg-[#0B1B3D] text-slate-700 group-hover:text-white flex items-center justify-center transition-colors">
+                  <div className="w-8 h-8 rounded-full bg-slate-200 group-hover:bg-[#003B46] text-slate-700 group-hover:text-white flex items-center justify-center transition-colors">
                     <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </div>
                 </div>
 
-                <h3 className="font-serif text-2xl text-[#0B1B3D] font-semibold group-hover:text-[#16A34A] transition-colors">
+                <h3 className="font-serif text-2xl text-[#003B46] font-semibold group-hover:text-[#7A0000] transition-colors">
                   {service.title}
                 </h3>
 
@@ -56,15 +56,15 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({ onSelectService }) => {
 
               <div className="mt-8 pt-4 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
                 <span className="font-medium">Est. {service.duration}</span>
-                <span className="font-semibold text-[#0B1B3D] group-hover:underline uppercase tracking-wider text-[11px]">Explore Details</span>
+                <span className="font-semibold text-[#003B46] group-hover:underline uppercase tracking-wider text-[11px]">Explore Details</span>
               </div>
             </div>
           ))}
 
           {/* Special Feature Tile: Consultation Call Trigger */}
-          <div className="bg-[#0B1B3D] text-white p-8 rounded-xl flex flex-col justify-between shadow-md relative overflow-hidden border border-blue-900">
+          <div className="bg-[#003B46] text-white p-8 rounded-xl flex flex-col justify-between shadow-md relative overflow-hidden border border-[#003B46]/40">
             <div className="space-y-4">
-              <span className="text-xs uppercase tracking-[0.2em] font-semibold text-[#16A34A]">
+              <span className="text-xs uppercase tracking-[0.2em] font-semibold text-[#7A0000]">
                 Custom Imprint
               </span>
               <h3 className="font-serif text-3xl font-semibold leading-tight text-white">
@@ -79,7 +79,7 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({ onSelectService }) => {
               <span className="text-xs font-semibold tracking-[0.18em] uppercase text-white">
                 Speak With An Editor
               </span>
-              <BookOpen className="w-5 h-5 text-[#16A34A]" />
+              <BookOpen className="w-5 h-5 text-[#7A0000]" />
             </div>
           </div>
         </div>

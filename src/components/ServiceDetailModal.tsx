@@ -28,12 +28,12 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
         </button>
 
         <div className="space-y-6">
-          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#16A34A]">
+          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#7A0000]">
             <Clock className="w-3.5 h-3.5" />
             <span>Est. Timeline: {service.duration}</span>
           </div>
 
-          <h3 className="font-serif text-4xl font-semibold text-[#0B1B3D]">
+          <h3 className="font-serif text-4xl font-semibold text-[#003B46]">
             {service.title}
           </h3>
 
@@ -42,13 +42,13 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
           </p>
 
           <div className="pt-4 border-t border-slate-200">
-            <h4 className="text-xs uppercase tracking-[0.2em] font-semibold text-[#16A34A] mb-3">
+            <h4 className="text-xs uppercase tracking-[0.2em] font-semibold text-[#7A0000] mb-3">
               Included Deliverables & Milestones
             </h4>
             <ul className="space-y-2.5">
               {service.deliverables.map((d, i) => (
                 <li key={i} className="flex items-start gap-3 text-sm text-slate-800 font-sans-clean font-normal">
-                  <CheckCircle2 className="w-4 h-4 text-[#16A34A] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-[#7A0000] shrink-0 mt-0.5" />
                   <span>{d}</span>
                 </li>
               ))}
@@ -64,7 +64,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
                 onClose();
                 onOpenConsultation();
               }}
-              className="w-full sm:w-auto px-6 py-3 bg-[#0B1B3D] hover:bg-[#16A34A] text-white text-xs uppercase tracking-[0.2em] font-bold rounded-full transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-xs"
+              className="w-full sm:w-auto px-6 py-3 bg-[#003B46] hover:bg-[#7A0000] text-white text-xs uppercase tracking-[0.2em] font-bold rounded-full transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-xs"
             >
               <span>Book For This Service</span>
               <ArrowRight className="w-4 h-4" />

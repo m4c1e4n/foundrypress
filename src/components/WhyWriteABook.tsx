@@ -8,7 +8,7 @@ export const WhyWriteABook: React.FC = () => {
   return (
     <section id="why-write" className="relative">
       {/* Dark Navy Hero Banner matching requested design */}
-      <div className="py-24 lg:py-32 bg-gradient-to-b from-[#0B1B3D] via-[#081530] to-[#050E21] text-white px-6 lg:px-12 border-b border-blue-900">
+      <div className="py-24 lg:py-32 bg-gradient-to-b from-[#003B46] via-[#003B46] to-[#003B46] text-white px-6 lg:px-12 border-b border-[#003B46]/40">
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-white font-semibold tracking-tight leading-[1.15]">
             A book is more than pages
@@ -29,12 +29,12 @@ export const WhyWriteABook: React.FC = () => {
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16 space-y-3">
-            <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#16A34A]">
-              <span className="w-2 h-0.5 bg-[#16A34A]" />
+            <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#7A0000]">
+              <span className="w-2 h-0.5 bg-[#7A0000]" />
               <span>Core Value & Purpose</span>
-              <span className="w-2 h-0.5 bg-[#16A34A]" />
+              <span className="w-2 h-0.5 bg-[#7A0000]" />
             </div>
-            <h3 className="font-serif text-3xl md:text-4xl text-[#0B1B3D] font-semibold">
+            <h3 className="font-serif text-3xl md:text-4xl text-[#003B46] font-semibold">
               Why Leaders & Legacy Builders Write
             </h3>
           </div>
@@ -46,13 +46,13 @@ export const WhyWriteABook: React.FC = () => {
               return (
                 <div
                   key={reason.title}
-                  className="bg-[#F8FAFC] border border-slate-200 p-8 rounded-xl space-y-4 hover:border-[#0B1B3D] transition-all shadow-xs hover:shadow-md"
+                  className="bg-[#F8FAFC] border border-slate-200 p-8 rounded-xl space-y-4 hover:border-[#003B46] transition-all shadow-xs hover:shadow-md"
                 >
-                  <div className="w-10 h-10 rounded-full bg-[#0B1B3D]/10 text-[#0B1B3D] flex items-center justify-center">
-                    <IconComponent className="w-5 h-5 text-[#0B1B3D]" />
+                  <div className="w-10 h-10 rounded-full bg-[#003B46]/10 text-[#003B46] flex items-center justify-center">
+                    <IconComponent className="w-5 h-5 text-[#003B46]" />
                   </div>
 
-                  <h3 className="font-serif text-2xl text-[#0B1B3D] font-semibold">
+                  <h3 className="font-serif text-2xl text-[#003B46] font-semibold">
                     {reason.title}
                   </h3>
 
@@ -66,10 +66,10 @@ export const WhyWriteABook: React.FC = () => {
 
           {/* Literary Quote Box */}
           <div className="mt-20 max-w-3xl mx-auto text-center p-10 bg-[#F8FAFC] border border-slate-200 rounded-xl shadow-xs">
-            <p className="font-serif text-2xl md:text-3xl italic text-[#0B1B3D] leading-relaxed mb-4">
+            <p className="font-serif text-2xl md:text-3xl italic text-[#003B46] leading-relaxed mb-4">
               “The stories we leave behind are the only real bridges across generations. Give your loved ones the gift of hearing your voice forever.”
             </p>
-            <span className="text-xs uppercase tracking-[0.2em] text-[#16A34A] font-semibold">
+            <span className="text-xs uppercase tracking-[0.2em] text-[#7A0000] font-semibold">
               Foundry Press Editorial Board
             </span>
           </div>
