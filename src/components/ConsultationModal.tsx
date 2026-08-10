@@ -73,16 +73,16 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
               <CheckCircle className="w-8 h-8 text-[#7A0000]" />
             </div>
             
-            <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-[#003B46]">
+            <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-[#7A0000]">
               Consultation Reserved
             </h3>
 
             <p className="text-sm text-slate-600 font-sans-clean leading-relaxed max-w-md mx-auto">
-              Thank you, <span className="font-semibold text-[#003B46]">{formData.name}</span>. Your consultation booking details have been sent to WhatsApp.
+              Thank you, <span className="font-semibold text-[#7A0000]">{formData.name}</span>. Your consultation booking details have been sent to WhatsApp.
             </p>
 
             <div className="bg-[#F8FAFC] border border-slate-200 p-4 rounded-xl text-xs text-slate-700 text-left space-y-2">
-              <div className="font-semibold uppercase tracking-[0.18em] text-[#003B46]">Booking Summary:</div>
+              <div className="font-semibold uppercase tracking-[0.18em] text-[#7A0000]">Booking Summary:</div>
               <p>• Date: <span className="font-semibold">{formData.preferredDate || 'Selected Date'}</span> at <span className="font-semibold">{formData.preferredTime}</span></p>
               <p>• Category: <span className="font-semibold">{formData.category}</span></p>
             </div>
@@ -111,7 +111,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
                 <BookOpen className="w-3.5 h-3.5" />
                 <span>Foundry Executive Consultation</span>
               </div>
-              <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-[#003B46]">
+              <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-[#7A0000]">
                 Schedule Your Complimentary Session
               </h3>
               <p className="text-xs text-slate-500 font-sans-clean mt-1 font-normal">
@@ -123,7 +123,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
               {step === 1 ? (
                 <div className="space-y-4 animate-in fade-in duration-200">
                   <div>
-                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#003B46] mb-1.5">
+                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#7A0000] mb-1.5">
                       Your Full Name *
                     </label>
                     <input
@@ -132,12 +132,12 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
                       placeholder="e.g. Thomas Sterling"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#003B46] min-h-[44px]"
+                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#7A0000] min-h-[44px]"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#003B46] mb-1.5">
+                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#7A0000] mb-1.5">
                       Email Address *
                     </label>
                     <input
@@ -146,12 +146,12 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
                       placeholder="thomas@example.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#003B46] min-h-[44px]"
+                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#7A0000] min-h-[44px]"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#003B46] mb-1.5">
+                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#7A0000] mb-1.5">
                       Phone Number
                     </label>
                     <input
@@ -159,18 +159,18 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
                       placeholder="+1 (555) 000-0000"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#003B46] min-h-[44px]"
+                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#7A0000] min-h-[44px]"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#003B46] mb-1.5">
+                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#7A0000] mb-1.5">
                       Book Category
                     </label>
                     <select
                       value={formData.category}
                       onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#003B46] min-h-[44px]"
+                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#7A0000] min-h-[44px]"
                     >
                       {BOOK_CATEGORIES.map((cat) => (
                         <option key={cat.id} value={cat.name}>
@@ -185,7 +185,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
                     onClick={() => {
                       if (formData.name && formData.email) setStep(2);
                     }}
-                    className="w-full mt-4 py-3.5 bg-[#003B46] hover:bg-[#7A0000] text-white text-xs uppercase tracking-[0.2em] font-bold rounded-full transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-xs min-h-[44px]"
+                    className="w-full mt-4 py-3.5 bg-[#7A0000] hover:bg-[#003B46] text-white text-xs uppercase tracking-[0.2em] font-bold rounded-full transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-xs min-h-[44px]"
                   >
                     <span>Continue To Date & Time</span>
                     <ArrowRight className="w-4 h-4" />
@@ -194,7 +194,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
               ) : (
                 <div className="space-y-4 animate-in fade-in duration-200">
                   <div>
-                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#003B46] mb-1.5">
+                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#7A0000] mb-1.5">
                       Preferred Date *
                     </label>
                     <input
@@ -202,18 +202,18 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
                       required
                       value={formData.preferredDate}
                       onChange={(e) => setFormData({ ...formData, preferredDate: e.target.value })}
-                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#003B46] min-h-[44px]"
+                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#7A0000] min-h-[44px]"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#003B46] mb-1.5">
+                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#7A0000] mb-1.5">
                       Preferred Time Slot
                     </label>
                     <select
                       value={formData.preferredTime}
                       onChange={(e) => setFormData({ ...formData, preferredTime: e.target.value })}
-                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#003B46] min-h-[44px]"
+                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#7A0000] min-h-[44px]"
                     >
                       <option value="09:00 AM EST">09:00 AM EST</option>
                       <option value="11:00 AM EST">11:00 AM EST</option>
@@ -223,7 +223,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
                   </div>
 
                   <div>
-                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#003B46] mb-1.5">
+                    <label className="block text-xs uppercase tracking-[0.18em] font-semibold text-[#7A0000] mb-1.5">
                       Brief Notes / Vision for your book
                     </label>
                     <textarea
@@ -231,7 +231,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
                       placeholder="Any specific stories, goals, or deadlines you'd like us to know beforehand..."
                       value={formData.notes}
                       onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#003B46] resize-none"
+                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#7A0000] resize-none"
                     />
                   </div>
 
@@ -239,13 +239,13 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
                     <button
                       type="button"
                       onClick={() => setStep(1)}
-                      className="w-1/3 py-3 border border-slate-200 text-slate-600 hover:text-slate-900 text-xs uppercase tracking-[0.18em] font-semibold rounded-full transition-colors cursor-pointer min-h-[44px]"
+                      className="w-1/3 py-3 border border-slate-200 text-slate-600 hover:text-[#003B46] hover:border-[#003B46] text-xs uppercase tracking-[0.18em] font-semibold rounded-full transition-colors cursor-pointer min-h-[44px]"
                     >
                       Back
                     </button>
                     <button
                       type="submit"
-                      className="w-2/3 py-3 bg-[#7A0000] hover:bg-[#5C0000] text-white text-xs uppercase tracking-[0.18em] font-bold rounded-full shadow-xs transition-colors cursor-pointer min-h-[44px] flex items-center justify-center gap-2"
+                      className="w-2/3 py-3 bg-[#7A0000] hover:bg-[#003B46] text-white text-xs uppercase tracking-[0.18em] font-bold rounded-full shadow-xs transition-colors cursor-pointer min-h-[44px] flex items-center justify-center gap-2"
                     >
                       <svg className="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
                         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>

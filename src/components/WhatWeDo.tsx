@@ -18,7 +18,7 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({ onSelectService }) => {
             <span>What We Do</span>
           </div>
           
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#003B46] font-semibold leading-[1.12]">
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#7A0000] font-semibold leading-[1.12]">
             End-to-End Literary Services
           </h2>
 
@@ -45,7 +45,7 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({ onSelectService }) => {
                   </div>
                 </div>
 
-                <h3 className="font-serif text-2xl text-[#003B46] font-semibold group-hover:text-[#7A0000] transition-colors">
+                <h3 className="font-serif text-2xl text-[#7A0000] font-semibold group-hover:text-[#003B46] transition-colors">
                   {service.title}
                 </h3>
 
@@ -56,30 +56,30 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({ onSelectService }) => {
 
               <div className="mt-8 pt-4 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
                 <span className="font-medium">Est. {service.duration}</span>
-                <span className="font-semibold text-[#003B46] group-hover:underline uppercase tracking-wider text-[11px]">Explore Details</span>
+                <span className="font-semibold text-[#7A0000] group-hover:text-[#003B46] group-hover:underline uppercase tracking-wider text-[11px]">Explore Details</span>
               </div>
             </div>
           ))}
 
           {/* Special Feature Tile: Consultation Call Trigger */}
-          <div className="bg-[#003B46] text-white p-8 rounded-xl flex flex-col justify-between shadow-md relative overflow-hidden border border-[#003B46]/40">
+          <div className="bg-[#7A0000] text-white p-8 rounded-xl flex flex-col justify-between shadow-md relative overflow-hidden border border-[#7A0000]/40">
             <div className="space-y-4">
-              <span className="text-xs uppercase tracking-[0.2em] font-semibold text-[#7A0000]">
+              <span className="text-xs uppercase tracking-[0.2em] font-bold text-red-100">
                 Custom Imprint
               </span>
               <h3 className="font-serif text-3xl font-semibold leading-tight text-white">
                 Have a unique manuscript or custom timeline?
               </h3>
-              <p className="text-sm text-slate-300 font-sans-clean font-light leading-relaxed">
+              <p className="text-sm text-slate-100 font-sans-clean font-light leading-relaxed">
                 We craft bespoke publishing packages for corporate archives, family trusts, and high-volume press runs.
               </p>
             </div>
 
-            <div className="mt-8 pt-4 border-t border-slate-700 flex items-center justify-between">
+            <div className="mt-8 pt-4 border-t border-red-800/80 flex items-center justify-between">
               <span className="text-xs font-semibold tracking-[0.18em] uppercase text-white">
                 Speak With An Editor
               </span>
-              <BookOpen className="w-5 h-5 text-[#7A0000]" />
+              <BookOpen className="w-5 h-5 text-white" />
             </div>
           </div>
         </div>

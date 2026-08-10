@@ -17,16 +17,16 @@ export const TypesOfBooks: React.FC = () => {
             <span>Types of Books</span>
           </div>
 
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#003B46] font-semibold leading-[1.12]">
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#7A0000] font-semibold leading-[1.12]">
             What Story Will You Publish?
           </h2>
 
           <p className="text-base md:text-lg text-slate-600 font-sans-clean leading-relaxed font-normal">
-            We publish across all non-fiction and personal narrative genres. Select any category to view typical page lengths and chapter blueprints.
+            We publish across all non-fiction and personal narrative genres. Select any category below to view typical page lengths and chapter blueprints.
           </p>
         </div>
 
-        {/* Tag / Pill List of 15 Book Categories matching reference pill buttons */}
+        {/* Tag / Pill List of Book Categories */}
         <div className="flex flex-wrap gap-2.5 md:gap-3 mb-12">
           {BOOK_CATEGORIES.map((cat) => {
             const isSelected = selectedCategory.id === cat.id;
@@ -36,8 +36,8 @@ export const TypesOfBooks: React.FC = () => {
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-5 py-2.5 rounded-full text-xs md:text-sm font-semibold tracking-wide transition-all duration-200 cursor-pointer border ${
                   isSelected
-                    ? 'bg-[#003B46] text-white border-[#003B46] shadow-sm'
-                    : 'bg-[#F8FAFC] text-slate-700 border-slate-200 hover:border-[#003B46] hover:bg-white'
+                    ? 'bg-[#7A0000] text-white border-[#7A0000] shadow-sm'
+                    : 'bg-[#F8FAFC] text-slate-700 border-slate-200 hover:border-[#003B46] hover:text-[#003B46] hover:bg-white'
                 }`}
               >
                 {cat.name}
@@ -53,7 +53,7 @@ export const TypesOfBooks: React.FC = () => {
             <div className="lg:col-span-7 space-y-6">
               <div className="flex items-center gap-3">
                 <BookMarked className="w-6 h-6 text-[#7A0000]" />
-                <h3 className="font-serif text-3xl md:text-4xl text-[#003B46] font-semibold">
+                <h3 className="font-serif text-3xl md:text-4xl text-[#7A0000] font-semibold">
                   {selectedCategory.name}
                 </h3>
               </div>
@@ -65,11 +65,11 @@ export const TypesOfBooks: React.FC = () => {
               <div className="pt-4 border-t border-slate-200 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
                 <div>
                   <span className="text-slate-500 uppercase tracking-[0.18em] font-semibold block mb-1">Typical Length</span>
-                  <span className="font-serif text-lg font-bold text-[#003B46]">{selectedCategory.typicalLength}</span>
+                  <span className="font-serif text-lg font-bold text-[#7A0000]">{selectedCategory.typicalLength}</span>
                 </div>
                 <div>
                   <span className="text-slate-500 uppercase tracking-[0.18em] font-semibold block mb-1">Target Audience</span>
-                  <span className="text-sm font-semibold text-[#003B46]">{selectedCategory.targetAudience}</span>
+                  <span className="text-sm font-semibold text-[#7A0000]">{selectedCategory.targetAudience}</span>
                 </div>
               </div>
             </div>

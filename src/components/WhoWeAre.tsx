@@ -15,7 +15,7 @@ export const WhoWeAre: React.FC = () => {
               <span>Who We Are</span>
             </div>
 
-            <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#003B46] leading-[1.15] font-semibold">
+            <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#7A0000] leading-[1.15] font-semibold">
               {WHO_WE_ARE_CONTENT.title}
             </h2>
 
@@ -26,7 +26,7 @@ export const WhoWeAre: React.FC = () => {
 
             {/* Standalone Closing Statement Highlight */}
             <div className="pt-6 border-t border-slate-200">
-              <blockquote className="font-serif text-2xl md:text-3xl italic text-[#003B46] tracking-tight">
+              <blockquote className="font-serif text-2xl md:text-3xl italic text-[#7A0000] tracking-tight">
                 “{WHO_WE_ARE_CONTENT.closingStatement}”
               </blockquote>
             </div>
@@ -46,7 +46,7 @@ export const WhoWeAre: React.FC = () => {
                 <div className="text-[#7A0000] text-[11px] font-sans tracking-[0.2em] uppercase font-semibold mb-3">
                   Chapter 3 • Page 42
                 </div>
-                <p className="text-sm md:text-base text-slate-800 leading-relaxed italic first-letter:text-3xl first-letter:font-bold first-letter:float-left first-letter:mr-2 first-letter:text-[#003B46]">
+                <p className="text-sm md:text-base text-slate-800 leading-relaxed italic first-letter:text-3xl first-letter:font-bold first-letter:float-left first-letter:mr-2 first-letter:text-[#7A0000]">
                   {AUDIO_DEMO_SAMPLE.writtenManuscript}
                 </p>
               </div>

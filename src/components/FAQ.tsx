@@ -22,7 +22,7 @@ export const FAQ: React.FC = () => {
             <span className="w-2 h-0.5 bg-[#7A0000]" />
           </div>
 
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#003B46] font-semibold">
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#7A0000] font-semibold">
             Everything You Need To Know
           </h2>
 
@@ -42,15 +42,15 @@ export const FAQ: React.FC = () => {
               >
                 <button
                   onClick={() => toggleFAQ(item.id)}
-                  className="w-full p-6 text-left flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors cursor-pointer"
+                  className="w-full p-6 text-left flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors cursor-pointer group"
                   aria-expanded={isOpen}
                 >
-                  <span className="font-serif text-xl md:text-2xl font-semibold text-[#003B46]">
+                  <span className="font-serif text-xl md:text-2xl font-semibold text-slate-900 group-hover:text-[#003B46] transition-colors">
                     {item.question}
                   </span>
                   <div
-                    className={`w-8 h-8 rounded-full bg-slate-100 text-[#003B46] flex items-center justify-center shrink-0 transition-transform duration-200 ${
-                      isOpen ? 'rotate-180 bg-[#003B46] text-white' : ''
+                    className={`w-8 h-8 rounded-full bg-slate-100 text-[#7A0000] flex items-center justify-center shrink-0 transition-transform duration-200 ${
+                      isOpen ? 'rotate-180 bg-[#7A0000] text-white' : ''
                     }`}
                   >
                     <ChevronDown className="w-4 h-4" />

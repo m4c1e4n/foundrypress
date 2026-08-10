@@ -60,10 +60,10 @@ export const Header: React.FC<HeaderProps> = () => {
               to={link.path}
               end={link.path === '/'}
               className={({ isActive }) =>
-                `text-xs xl:text-sm font-semibold px-2.5 py-1.5 rounded-md transition-colors whitespace-nowrap ${
+                `text-xs xl:text-sm font-semibold px-2.5 py-1.5 rounded-md transition-all duration-150 whitespace-nowrap cursor-pointer ${
                   isActive
                     ? 'text-[#7A0000] font-bold bg-[#7A0000]/10 border-b-2 border-[#7A0000]'
-                    : 'text-slate-700 hover:text-[#003B46] hover:bg-slate-100/80'
+                    : 'text-slate-700 hover:text-[#7A0000] hover:bg-red-50'
                 }`
               }
             >
@@ -76,7 +76,7 @@ export const Header: React.FC<HeaderProps> = () => {
         <div className="flex lg:hidden items-center gap-2">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2.5 text-slate-800 focus:outline-none min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg hover:bg-slate-100 cursor-pointer"
+            className="p-2.5 text-slate-800 hover:text-[#7A0000] focus:outline-none min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg hover:bg-red-50 cursor-pointer"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -96,7 +96,7 @@ export const Header: React.FC<HeaderProps> = () => {
                 onClick={() => setMobileMenuOpen(false)}
                 className={({ isActive }) =>
                   `text-sm font-semibold py-3 border-b border-slate-100 flex items-center justify-between min-h-[44px] px-2 rounded-lg ${
-                    isActive ? 'text-[#7A0000] font-bold bg-[#7A0000]/10' : 'text-slate-800 hover:text-[#003B46] hover:bg-slate-50'
+                    isActive ? 'text-[#7A0000] font-bold bg-[#7A0000]/10' : 'text-slate-800 hover:text-[#7A0000] hover:bg-red-50'
                   }`
                 }
               >

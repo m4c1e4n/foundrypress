@@ -8,9 +8,9 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = () => {
   return (
-    <section id="home" className="relative pt-24 lg:pt-32 pb-24 lg:pb-32 overflow-hidden bg-[#003B46] text-white min-h-[520px] lg:min-h-[600px] flex flex-col justify-center">
+    <section id="home" className="relative pt-24 lg:pt-32 pb-24 lg:pb-32 overflow-hidden bg-[#7A0000] text-white min-h-[520px] lg:min-h-[600px] flex flex-col justify-center">
       {/* Background Layer with Book Artwork on the Right */}
-      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden bg-[#003B46]">
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden bg-[#7A0000]">
         {/* Book image seamlessly integrated into the right side of the background */}
         <img
           src={bookMockupImg}
@@ -18,10 +18,10 @@ export const Hero: React.FC<HeroProps> = () => {
           className="absolute right-0 top-0 h-full w-full lg:w-3/5 object-cover object-center lg:object-right opacity-80 sm:opacity-90 mix-blend-lighten"
         />
 
-        {/* Seamless Gradient Overlays blending the book image into the #003B46 dark azure background */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#003B46] via-[#003B46]/90 lg:via-[#003B46]/60 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#003B46] via-transparent to-[#003B46]/70" />
-        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-[#7A0000]/20 rounded-full blur-3xl" />
+        {/* Seamless Gradient Overlays blending the book image into the #7A0000 dark red background */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#7A0000] via-[#7A0000]/90 lg:via-[#7A0000]/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#7A0000] via-transparent to-[#7A0000]/70" />
+        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-white/10 rounded-full blur-3xl" />
       </div>
 
       {/* Hero Content Overlay */}
@@ -29,7 +29,7 @@ export const Hero: React.FC<HeroProps> = () => {
         <div className="max-w-2xl lg:max-w-3xl space-y-6 sm:space-y-8 text-left">
           {/* Tagline */}
           <div className="flex items-center gap-2.5 text-white/90 font-semibold tracking-[0.2em] uppercase text-xs sm:text-sm">
-            <span className="w-3.5 h-1 bg-[#7A0000] rounded-full" />
+            <span className="w-3.5 h-1 bg-white rounded-full" />
             <span>{HERO_CONTENT.tagline}</span>
           </div>
 

@@ -21,37 +21,45 @@
 }
 
 /* Brand Palette Utility Classes */
-/* Dark Azure: #003B46 */
-.bg-brand-azure {
-  background-color: #003B46;
-}
-.text-brand-azure {
-  color: #003B46;
-}
-.border-brand-azure {
-  border-color: #003B46;
-}
-
-/* Dark Gray Brown: #3F2710 */
-.bg-brand-brown {
-  background-color: #3F2710;
-}
-.text-brand-brown {
-  color: #3F2710;
-}
-.border-brand-brown {
-  border-color: #3F2710;
-}
-
-/* Dark Red: #7A0000 */
+/* Dark Red Primary: #7A0000 */
+/* Hover Dark Red: #5C0000 (deep crimson) or #A30000 (vibrant crimson) */
 .bg-brand-red {
   background-color: #7A0000;
+}
+.bg-brand-red-hover {
+  background-color: #5C0000;
 }
 .text-brand-red {
   color: #7A0000;
 }
+.text-brand-red-hover {
+  color: #5C0000;
+}
 .border-brand-red {
   border-color: #7A0000;
+}
+
+/* Hover utilities for links and clickable text */
+.hover-link-primary {
+  transition: color 150ms ease-in-out, text-decoration-color 150ms ease-in-out;
+}
+.hover-link-primary:hover {
+  color: #7A0000;
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+}
+
+.hover-btn-primary {
+  transition: all 200ms ease-in-out;
+}
+.hover-btn-primary:hover {
+  background-color: #5C0000;
+  box-shadow: 0 4px 12px rgba(122, 0, 0, 0.25);
+  transform: translateY(-1px);
+}
+.hover-btn-primary:active {
+  background-color: #3B0000;
+  transform: translateY(0);
 }
 
 /* Custom scrollbar for brand theme */
@@ -66,7 +74,7 @@
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #003B46;
+  background: #7A0000;
 }
 
 

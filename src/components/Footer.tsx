@@ -13,9 +13,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
   };
 
   return (
-    <footer className="bg-[#003B46] text-slate-200 pt-16 pb-12 border-t border-[#003B46]/80">
+    <footer className="bg-[#7A0000] text-slate-100 pt-16 pb-12 border-t border-[#7A0000]/80">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-white/20">
           
           {/* Brand Info */}
           <div className="md:col-span-5 space-y-4">
@@ -43,15 +43,15 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
               Navigation
             </span>
             <ul className="space-y-2 text-slate-200 font-medium">
-              <li><Link to="/" className="hover:text-white hover:underline transition-colors">Home</Link></li>
-              <li><Link to="/who-we-are" className="hover:text-white hover:underline transition-colors">Who We Are</Link></li>
-              <li><Link to="/services" className="hover:text-white hover:underline transition-colors">Services</Link></li>
-              <li><Link to="/how-it-works" className="hover:text-white hover:underline transition-colors">How It Works</Link></li>
-              <li><Link to="/book-types" className="hover:text-white hover:underline transition-colors">Types of Books</Link></li>
-              <li><Link to="/deliverables" className="hover:text-white hover:underline transition-colors">Deliverables</Link></li>
-              <li><Link to="/why-write" className="hover:text-white hover:underline transition-colors">Why Write A Book</Link></li>
-              <li><Link to="/faq" className="hover:text-white hover:underline transition-colors">FAQ</Link></li>
-              <li><Link to="/contact" className="hover:text-white hover:underline transition-colors">Contact</Link></li>
+              <li><Link to="/" className="hover:text-[#003B46] hover:bg-white/90 px-1.5 py-0.5 rounded transition-all">Home</Link></li>
+              <li><Link to="/who-we-are" className="hover:text-[#003B46] hover:bg-white/90 px-1.5 py-0.5 rounded transition-all">Who We Are</Link></li>
+              <li><Link to="/services" className="hover:text-[#003B46] hover:bg-white/90 px-1.5 py-0.5 rounded transition-all">Services</Link></li>
+              <li><Link to="/how-it-works" className="hover:text-[#003B46] hover:bg-white/90 px-1.5 py-0.5 rounded transition-all">How It Works</Link></li>
+              <li><Link to="/book-types" className="hover:text-[#003B46] hover:bg-white/90 px-1.5 py-0.5 rounded transition-all">Types of Books</Link></li>
+              <li><Link to="/deliverables" className="hover:text-[#003B46] hover:bg-white/90 px-1.5 py-0.5 rounded transition-all">Deliverables</Link></li>
+              <li><Link to="/why-write" className="hover:text-[#003B46] hover:bg-white/90 px-1.5 py-0.5 rounded transition-all">Why Write A Book</Link></li>
+              <li><Link to="/faq" className="hover:text-[#003B46] hover:bg-white/90 px-1.5 py-0.5 rounded transition-all">FAQ</Link></li>
+              <li><Link to="/contact" className="hover:text-[#003B46] hover:bg-white/90 px-1.5 py-0.5 rounded transition-all">Contact</Link></li>
             </ul>
           </div>
 
@@ -64,14 +64,14 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
               Ridge Tower, Independence Avenue<br />
               Accra, Ghana<br />
               Direct: +233 24 710 9495<br />
-              <a href="mailto:foundrypressgh@gmail.com" className="hover:text-white underline">
+              <a href="mailto:foundrypressgh@gmail.com" className="hover:text-[#003B46] hover:bg-white px-1.5 py-0.5 rounded underline transition-all">
                 foundrypressgh@gmail.com
               </a>
             </p>
             <div className="pt-2">
               <button
                 onClick={onOpenConsultation}
-                className="px-5 py-2.5 bg-[#7A0000] hover:bg-[#5C0000] text-white text-[11px] uppercase tracking-[0.2em] font-bold rounded-full transition-colors cursor-pointer shadow-sm border border-white/20"
+                className="px-5 py-2.5 bg-white text-[#7A0000] hover:bg-[#003B46] hover:text-white text-[11px] uppercase tracking-[0.2em] font-bold rounded-full transition-colors cursor-pointer shadow-sm"
               >
                 Book Consultation
               </button>

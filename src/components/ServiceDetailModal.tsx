@@ -22,7 +22,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-full transition-colors cursor-pointer"
+          className="absolute top-5 right-5 p-2 text-slate-400 hover:text-[#003B46] hover:bg-slate-100 rounded-full transition-colors cursor-pointer"
         >
           <X className="w-5 h-5" />
         </button>
@@ -33,7 +33,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
             <span>Est. Timeline: {service.duration}</span>
           </div>
 
-          <h3 className="font-serif text-4xl font-semibold text-[#003B46]">
+          <h3 className="font-serif text-4xl font-semibold text-[#7A0000]">
             {service.title}
           </h3>
 
@@ -64,7 +64,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
                 onClose();
                 onOpenConsultation();
               }}
-              className="w-full sm:w-auto px-6 py-3 bg-[#003B46] hover:bg-[#7A0000] text-white text-xs uppercase tracking-[0.2em] font-bold rounded-full transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-xs"
+              className="w-full sm:w-auto px-6 py-3 bg-[#7A0000] hover:bg-[#003B46] text-white text-xs uppercase tracking-[0.2em] font-bold rounded-full transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-xs"
             >
               <span>Book For This Service</span>
               <ArrowRight className="w-4 h-4" />
