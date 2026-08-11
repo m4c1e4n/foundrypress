@@ -115,7 +115,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
                 Schedule Your Complimentary Session
               </h3>
               <p className="text-xs text-slate-500 font-sans-clean mt-1 font-normal">
-                Step {step} of 2 — Speak directly with a senior ghostwriter or editor.
+                Step {step} of 2. Speak directly with a senior ghostwriter or editor.
               </p>
             </div>
 

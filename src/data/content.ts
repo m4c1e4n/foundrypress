@@ -28,7 +28,7 @@ export const SERVICES: ServiceItem[] = [
     id: "voice-recording",
     title: "Voice Recording",
     shortDescription: "Guided, comfortable interviews conducted in-person or via secure remote studio.",
-    fullDescription: "Our skilled interviewers lead you through structured, comfortable conversations. No writing required—just speak naturally while we record high-fidelity audio.",
+    fullDescription: "Our skilled interviewers lead you through structured, comfortable conversations. No writing required, just speak naturally while we record high-fidelity audio.",
     deliverables: ["Studio-Quality Audio Stems", "Verbatim Master Transcripts", "Structured Q&A Archive"],
     duration: "3-5 Session Weeks"
   },
@@ -301,7 +301,7 @@ export const DELIVERABLES: DeliverableItem[] = [
 
 export const WHY_WRITE_A_BOOK_CONTENT = {
   heading: "A book is more than pages",
-  subheading: "It is your legacy bound in cloth and ink—a permanent testament to your wisdom, voice, and achievements.",
+  subheading: "It is your legacy bound in cloth and ink, a permanent testament to your wisdom, voice, and achievements.",
   reasons: [
     {
       title: "Enduring Legacy",

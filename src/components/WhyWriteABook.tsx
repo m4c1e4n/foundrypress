@@ -20,7 +20,7 @@ export const WhyWriteABook: React.FC = () => {
           </p>
 
           <p className="text-xs sm:text-sm md:text-base text-slate-300 font-sans-clean leading-relaxed font-normal max-w-2xl mx-auto pt-2">
-            A book creates a permanent anchor in a world of fleeting digital noise. Whether for your children, your clients, or your colleagues—the written word carries a weight that speech cannot replicate.
+            A book creates a permanent anchor in a world of fleeting digital noise. Whether for your children, your clients, or your colleagues, the written word carries a weight that speech cannot replicate.
           </p>
         </div>
       </div>
@@ -31,9 +31,7 @@ export const WhyWriteABook: React.FC = () => {
           {/* Header */}
           <div className="text-center mb-16 space-y-3">
             <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#7A0000]">
-              <span className="w-2 h-0.5 bg-[#7A0000]" />
               <span>Core Value & Purpose</span>
-              <span className="w-2 h-0.5 bg-[#7A0000]" />
             </div>
             <h3 className="font-serif text-3xl md:text-4xl text-[#7A0000] font-semibold">
               Why Leaders & Legacy Builders Write

@@ -49,7 +49,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenConsultati
         {/* Header with requested closing statement */}
         <div className="max-w-3xl mb-12 sm:mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#7A0000]">
-            <span className="w-2 h-0.5 bg-[#7A0000]" />
             <span>Get In Touch</span>
           </div>
 
@@ -200,7 +199,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenConsultati
                   <MapPin className="w-5 h-5 text-[#7A0000] shrink-0 mt-0.5" />
                   <div>
                     <span className="font-semibold block text-slate-900">Publishing Headquarters</span>
-                    <span className="text-slate-600">Ridge Tower, Independence Avenue<br />Accra, Ghana</span>
+                    <span className="text-slate-600">Labone Social Club, 1 Abafun Crescent<br />Labone, Accra, Ghana</span>
                   </div>
                 </div>
 

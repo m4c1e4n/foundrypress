@@ -111,7 +111,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenConsultation }) =>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-4 border-r-0 md:border-r border-slate-200 pr-0 md:pr-8 space-y-2">
               <span className="text-xs uppercase tracking-[0.2em] font-semibold text-[#7A0000]">
-                Active Phase Focus — Step 0{activeStepData.stepNumber}
+                Active Phase Focus: Step 0{activeStepData.stepNumber}
               </span>
               <h3 className="font-serif text-3xl md:text-4xl text-[#7A0000] font-semibold">
                 {activeStepData.title}
@@ -158,7 +158,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenConsultation }) =>
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#7A0000]">
                 <Sparkles className="w-4 h-4 text-[#7A0000]" />
-                <span>Process Milestone — Step 0{activeStepData.stepNumber}</span>
+                <span>Process Milestone: Step 0{activeStepData.stepNumber}</span>
               </div>
 
               <h3 className="font-serif text-3xl md:text-4xl font-semibold text-[#7A0000]">

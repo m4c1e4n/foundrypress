@@ -61,7 +61,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
               Publishing Imprint
             </span>
             <p className="text-slate-200 font-medium leading-relaxed">
-              Ridge Tower, Independence Avenue<br />
+              Labone Social Club<br />
+              1 Abafun Crescent, Labone<br />
               Accra, Ghana<br />
               Direct: +233 50 073 2369<br />
               <a href="mailto:foundrypressgh@gmail.com" className="hover:text-[#003B46] hover:bg-white px-1.5 py-0.5 rounded underline transition-all">
