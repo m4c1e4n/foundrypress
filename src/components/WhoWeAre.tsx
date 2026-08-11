@@ -11,7 +11,6 @@ export const WhoWeAre: React.FC = () => {
           {/* Left Column: Narrative Copy */}
           <div className="lg:col-span-7 space-y-8">
             <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#7A0000]">
-              <span className="w-2 h-0.5 bg-[#7A0000]" />
               <span>Who We Are</span>
             </div>
 
