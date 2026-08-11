@@ -14,7 +14,6 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({ onSelectService }) => {
         {/* Header */}
         <div className="max-w-3xl mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#7A0000]">
-            <span className="w-2 h-0.5 bg-[#7A0000]" />
             <span>What We Do</span>
           </div>
           
