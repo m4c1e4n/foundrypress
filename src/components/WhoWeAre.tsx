@@ -2,11 +2,15 @@ import React from 'react';
 import { WHO_WE_ARE_CONTENT, AUDIO_DEMO_SAMPLE } from '../data/content';
 import { CheckCircle2, BookOpen } from 'lucide-react';
 
-export const WhoWeAre: React.FC = () => {
+interface WhoWeAreProps {
+  onOpenConsultation?: () => void;
+}
+
+export const WhoWeAre: React.FC<WhoWeAreProps> = () => {
   return (
-    <section id="who-we-are" className="py-24 lg:py-32 bg-[#F8FAFC] border-y border-slate-200">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+    <section id="who-we-are" className="pt-8 sm:pt-10 lg:pt-12 pb-16 sm:pb-20 lg:pb-24 bg-[#F8FAFC] border-y border-slate-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           
           {/* Left Column: Narrative Copy */}
           <div className="lg:col-span-7 space-y-8">
