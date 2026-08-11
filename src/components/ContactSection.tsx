@@ -199,7 +199,11 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenConsultati
                   <MapPin className="w-5 h-5 text-[#7A0000] shrink-0 mt-0.5" />
                   <div>
                     <span className="font-semibold block text-slate-900">Publishing Headquarters</span>
-                    <span className="text-slate-600">Labone Social Club, 1 Abafun Crescent<br />Labone, Accra, Ghana</span>
+                    <span className="text-slate-600 block leading-relaxed">
+                      Labone Social Club<br />
+                      1 Abafun Crescent<br />
+                      Labone, Accra
+                    </span>
                   </div>
                 </div>
 

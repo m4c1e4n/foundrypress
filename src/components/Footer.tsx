@@ -42,16 +42,16 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
             <span className="uppercase tracking-[0.2em] text-white font-bold block mb-3">
               Navigation
             </span>
-            <ul className="space-y-2 text-slate-200 font-medium">
-              <li><Link to="/" className="hover:text-[#003B46] hover:bg-white/90 px-1.5 py-0.5 rounded transition-all">Home</Link></li>
-              <li><Link to="/who-we-are" className="hover:text-[#003B46] hover:bg-white/90 px-1.5 py-0.5 rounded transition-all">Who We Are</Link></li>
-              <li><Link to="/services" className="hover:text-[#003B46] hover:bg-white/90 px-1.5 py-0.5 rounded transition-all">Services</Link></li>
-              <li><Link to="/how-it-works" className="hover:text-[#003B46] hover:bg-white/90 px-1.5 py-0.5 rounded transition-all">How It Works</Link></li>
-              <li><Link to="/book-types" className="hover:text-[#003B46] hover:bg-white/90 px-1.5 py-0.5 rounded transition-all">Types of Books</Link></li>
-              <li><Link to="/deliverables" className="hover:text-[#003B46] hover:bg-white/90 px-1.5 py-0.5 rounded transition-all">Deliverables</Link></li>
-              <li><Link to="/why-write" className="hover:text-[#003B46] hover:bg-white/90 px-1.5 py-0.5 rounded transition-all">Why Write A Book</Link></li>
-              <li><Link to="/faq" className="hover:text-[#003B46] hover:bg-white/90 px-1.5 py-0.5 rounded transition-all">FAQ</Link></li>
-              <li><Link to="/contact" className="hover:text-[#003B46] hover:bg-white/90 px-1.5 py-0.5 rounded transition-all">Contact</Link></li>
+            <ul className="space-y-1 text-slate-200 font-medium">
+              <li><Link to="/" className="hover:text-white hover:underline transition-colors block py-0.5">Home</Link></li>
+              <li><Link to="/who-we-are" className="hover:text-white hover:underline transition-colors block py-0.5">Who We Are</Link></li>
+              <li><Link to="/services" className="hover:text-white hover:underline transition-colors block py-0.5">Services</Link></li>
+              <li><Link to="/how-it-works" className="hover:text-white hover:underline transition-colors block py-0.5">How It Works</Link></li>
+              <li><Link to="/book-types" className="hover:text-white hover:underline transition-colors block py-0.5">Types of Books</Link></li>
+              <li><Link to="/deliverables" className="hover:text-white hover:underline transition-colors block py-0.5">Deliverables</Link></li>
+              <li><Link to="/why-write" className="hover:text-white hover:underline transition-colors block py-0.5">Why Write A Book</Link></li>
+              <li><Link to="/faq" className="hover:text-white hover:underline transition-colors block py-0.5">FAQ</Link></li>
+              <li><Link to="/contact" className="hover:text-white hover:underline transition-colors block py-0.5">Contact</Link></li>
             </ul>
           </div>
 
@@ -62,10 +62,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
             </span>
             <p className="text-slate-200 font-medium leading-relaxed">
               Labone Social Club<br />
-              1 Abafun Crescent, Labone<br />
-              Accra, Ghana<br />
+              1 Abafun Crescent<br />
+              Labone, Accra<br />
               Direct: +233 50 073 2369<br />
-              <a href="mailto:foundrypressgh@gmail.com" className="hover:text-[#003B46] hover:bg-white px-1.5 py-0.5 rounded underline transition-all">
+              <a href="mailto:foundrypressgh@gmail.com" className="hover:text-white underline transition-colors block mt-0.5">
                 foundrypressgh@gmail.com
               </a>
             </p>
