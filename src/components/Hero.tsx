@@ -29,7 +29,6 @@ export const Hero: React.FC<HeroProps> = () => {
         <div className="max-w-2xl lg:max-w-3xl space-y-6 sm:space-y-8 text-left">
           {/* Tagline */}
           <div className="flex items-center gap-2.5 text-white/90 font-semibold tracking-[0.2em] uppercase text-xs sm:text-sm">
-            <span className="w-3.5 h-1 bg-white rounded-full" />
             <span>{HERO_CONTENT.tagline}</span>
           </div>
 
