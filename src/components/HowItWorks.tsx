@@ -25,7 +25,6 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenConsultation }) =>
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
           <div>
             <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#7A0000] mb-3">
-              <span className="w-2 h-0.5 bg-[#7A0000]" />
               <span>Process Overview</span>
             </div>
             <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#7A0000] font-semibold tracking-tight">
