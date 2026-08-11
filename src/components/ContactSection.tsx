@@ -21,7 +21,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenConsultati
     e.preventDefault();
     if (!formData.name || !formData.email) return;
 
-    const phoneNumber = '233247109495';
+    const phoneNumber = '233500732369';
     const text = `Hello Foundry Press, I would like to submit an inquiry:
 
 *Name:* ${formData.name}
@@ -38,7 +38,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenConsultati
     setSubmitted(true);
   };
 
-  const waInquiryUrl = `https://wa.me/233247109495?text=${encodeURIComponent(
+  const waInquiryUrl = `https://wa.me/233500732369?text=${encodeURIComponent(
     `Hello Foundry Press, I would like to submit an inquiry:\n\n*Name:* ${formData.name}\n*Email:* ${formData.email}\n*Phone:* ${formData.phone || 'N/A'}\n*Book Category:* ${formData.category}\n*Story Concept / Message:* ${formData.message}`
   )}`;
 
@@ -136,7 +136,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenConsultati
                     </label>
                     <input
                       type="tel"
-                      placeholder="+233 24 710 9495"
+                      placeholder="+233 50 073 2369"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-base sm:text-sm text-slate-900 focus:outline-none focus:border-[#7A0000] transition-colors min-h-[44px]"
@@ -208,7 +208,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenConsultati
                   <Phone className="w-5 h-5 text-[#7A0000] shrink-0" />
                   <div>
                     <span className="font-semibold block text-slate-900">Direct Editorial Line</span>
-                    <span className="text-slate-600">+233 24 710 9495</span>
+                    <span className="text-slate-600">+233 50 073 2369</span>
                   </div>
                 </div>
 
@@ -219,12 +219,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenConsultati
                   <div>
                     <span className="font-semibold block text-slate-900">WhatsApp Message</span>
                     <a
-                      href="https://wa.me/233247109495?text=Hello%20Foundry%20Press%2C%20I%20would%20like%20to%20inquire%20about%20publishing%20a%20book."
+                      href="https://wa.me/233500732369?text=Hello%20Foundry%20Press%2C%20I%20would%20like%20to%20inquire%20about%20publishing%20a%20book."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-[#7A0000] hover:text-[#003B46] hover:underline font-semibold"
                     >
-                      Text us on WhatsApp (+233 24 710 9495)
+                      Text us on WhatsApp (+233 50 073 2369)
                     </a>
                   </div>
                 </div>

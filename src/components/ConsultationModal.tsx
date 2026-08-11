@@ -26,7 +26,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
   const handleComplete = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const phoneNumber = '233247109495';
+    const phoneNumber = '233500732369';
     const text = `Hello Foundry Press, I would like to schedule a consultation:
 
 *Name:* ${formData.name}
@@ -51,7 +51,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
     onClose();
   };
 
-  const waBookingUrl = `https://wa.me/233247109495?text=${encodeURIComponent(
+  const waBookingUrl = `https://wa.me/233500732369?text=${encodeURIComponent(
     `Hello Foundry Press, I would like to schedule a consultation:\n\n*Name:* ${formData.name}\n*Email:* ${formData.email}\n*Phone:* ${formData.phone || 'N/A'}\n*Book Category:* ${formData.category}\n*Preferred Date:* ${formData.preferredDate || 'Not specified'}\n*Preferred Time:* ${formData.preferredTime}\n*Notes:* ${formData.notes || 'None'}`
   )}`;
 
