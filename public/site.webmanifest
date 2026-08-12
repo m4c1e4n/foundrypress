@@ -1,0 +1,22 @@
+{
+  "name": "Foundry Press — Every story deserves a book",
+  "short_name": "Foundry Press",
+  "description": "Ghostwriting & Private Publishing House in Accra, Ghana",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FDFCFB",
+  "theme_color": "#7A0000",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/foundry_press_logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
