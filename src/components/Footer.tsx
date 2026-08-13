@@ -87,9 +87,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
             <span>© {new Date().getFullYear()} Foundry Press. All rights reserved. Accra, Ghana.</span>
             <span className="hidden sm:inline text-slate-500">•</span>
             <span>
-              created by{' '}
+              Designed by{' '}
               <a
-                href="https://m4c1e4n.github.io/"
+                href="https://m4c1e4n.github.io/myportfolio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-100 hover:text-white underline font-medium transition-colors"
